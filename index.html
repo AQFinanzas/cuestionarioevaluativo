@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<!-- saved from url=(0269)file:///Users/aqfinanzas/Library/Application%20Support/Claude/local-agent-mode-sessions/14780b9b-3168-4500-84bb-fa4337af3575/297b3031-5925-4957-9b8c-313ce97505ef/local_1843609c-f95f-4780-a6db-e80b630dba7a/outputs/Cuestionario%20Excedente%20-%20Pulso%20de%20Alumnos.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Excedente — Antes de tu Sesión Personalizada</title>
+<style>
+  :root{
+    --navy:#211f6e; --orange:#f15a24; --blue:#2f8fe0; --blue-light:#5fb2ec;
+    --bg:#f4f6fb; --panel:#ffffff; --border:#e4e8f2; --text:#1c2333; --muted:#667085;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    padding:24px; line-height:1.5;
+  }
+  .wrap{max-width:600px; margin:0 auto;}
+  header{text-align:center; margin-bottom:14px;}
+  header svg{display:block; margin:0 auto;}
+  header h1{font-size:20px; color:var(--navy); margin:6px 0 4px; font-weight:800;}
+  header p{color:var(--muted); font-size:13px; margin:0 auto; max-width:480px;}
+
+  .progress-track{background:var(--border); border-radius:20px; height:8px; margin:16px 0 20px; overflow:hidden;}
+  .progress-fill{background:linear-gradient(90deg,var(--navy),var(--blue)); height:100%; width:8%; transition:width .3s ease;}
+  .progress-label{text-align:right; font-size:11.5px; color:var(--muted); margin-top:-14px; margin-bottom:16px;}
+
+  .card{background:var(--panel); border:1px solid var(--border); border-radius:16px; padding:28px 24px; box-shadow:0 2px 10px rgba(33,31,110,0.06); min-height:260px; display:flex; flex-direction:column;}
+  .card h2{font-size:16.5px; color:var(--navy); margin:0 0 4px; font-weight:800;}
+  .card .hint{font-size:12px; color:var(--muted); margin:0 0 16px;}
+  .step-body{flex:1;}
+
+  input[type=text], input[type=email], textarea, select{
+    width:100%; border:1px solid var(--border); border-radius:8px; padding:10px 12px;
+    font-size:14px; font-family:inherit; color:var(--text); background:#fbfcfe; margin-bottom:12px;
+  }
+  textarea{resize:vertical; min-height:80px;}
+  label.field-label{font-size:12px; font-weight:700; color:var(--muted); display:block; margin-bottom:5px;}
+
+  .scale{display:flex; gap:6px; flex-wrap:wrap;}
+  .scale label{
+    flex:1; min-width:30px; text-align:center; border:1px solid var(--border); border-radius:8px;
+    padding:10px 0; font-size:13px; font-weight:700; color:var(--muted); cursor:pointer; user-select:none;
+    transition:all .15s;
+  }
+  .scale input{display:none;}
+  .scale input:checked + label{background:var(--navy); color:#fff; border-color:var(--navy);}
+  .scale-labels{display:flex; justify-content:space-between; font-size:11px; color:var(--muted); margin-top:6px;}
+
+  .opts{display:flex; flex-direction:column; gap:8px;}
+  .opt{border:1px solid var(--border); border-radius:9px; padding:11px 12px; font-size:13.5px; cursor:pointer; transition:all .15s; display:flex; align-items:center; gap:9px;}
+  .opt input{accent-color:var(--orange);}
+  .opt:hover{border-color:var(--blue);}
+  .opt.checked{border-color:var(--orange); background:rgba(241,90,36,0.05);}
+
+  .nav{display:flex; gap:10px; margin-top:18px;}
+  .btn{flex:1; border:none; border-radius:10px; padding:13px; font-size:14.5px; font-weight:800; cursor:pointer;}
+  .btn-primary{background:var(--orange); color:#fff;}
+  .btn-primary:hover{background:#d94c1c;}
+  .btn-secondary{background:#eef2fb; color:var(--navy); flex:0 0 90px;}
+  .btn:disabled{opacity:.5; cursor:default;}
+
+  #thanks{display:none; text-align:center; background:var(--panel); border:1px solid var(--border); border-radius:16px; padding:40px 24px;}
+  #thanks h2{color:var(--navy);}
+  #thanks p{color:var(--muted); font-size:14px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <svg width="130" height="88" viewBox="0 0 460 300" xmlns="http://www.w3.org/2000/svg">
+      <rect x="55" y="78" width="60" height="16" rx="8" fill="#211f6e"></rect>
+      <rect x="100" y="102" width="90" height="16" rx="8" fill="#211f6e"></rect>
+      <rect x="80" y="126" width="45" height="16" rx="8" fill="#211f6e"></rect>
+      <rect x="130" y="150" width="35" height="16" rx="8" fill="#211f6e"></rect>
+      <circle cx="262" cy="128" r="66" fill="#f15a24"></circle>
+      <circle cx="246" cy="128" r="66" fill="#211f6e"></circle>
+      <text x="246" y="153" font-size="78" font-weight="800" fill="#ffffff" text-anchor="middle" font-family="Arial, sans-serif">$</text>
+      <text x="230" y="248" font-size="64" font-weight="800" fill="#211f6e" text-anchor="middle" font-family="Arial, sans-serif">Excedente</text>
+      <path d="M270 262 C 330 250, 370 248, 420 240" stroke="#5fb2ec" stroke-width="6" fill="none" stroke-linecap="round"></path>
+      <path d="M255 274 C 320 266, 375 262, 430 252" stroke="#2f8fe0" stroke-width="6" fill="none" stroke-linecap="round"></path>
+    </svg>
+    <h1>¡Gracias por ser parte de Excedente! 🎉</h1>
+    <p>Antes de tu sesión personalizada conmigo, cuéntame un poco de ti — así la aprovechamos al máximo y te ayudo con un plan que se ajuste de verdad a tu momento. Son 2 minutos.</p>
+  </header>
+
+  <div class="progress-track"><div class="progress-fill" id="progressFill" style="width: 10%;"></div></div>
+  <div class="progress-label" id="progressLabel">Pregunta 1 de 10</div>
+
+  <form id="pulseForm">
+    <div class="card">
+      <div class="step-body" id="stepBody">
+      <h2>Empecemos 🙂</h2>
+      <p class="hint">Para poder prepararte una sesión hecha a tu medida.</p>
+      <label class="field-label">Nombre</label>
+      <input type="text" id="f_nombre" value="">
+      <label class="field-label">Correo registrado</label>
+      <input type="email" id="f_email" value="">
+    </div>
+      <div class="nav">
+        <button type="button" class="btn btn-secondary" id="backBtn" disabled="">Atrás</button>
+        <button type="button" class="btn btn-primary" id="nextBtn">Siguiente</button>
+      </div>
+    </div>
+  </form>
+
+  <div id="thanks">
+    <svg width="60" height="60" viewBox="0 0 460 300" xmlns="http://www.w3.org/2000/svg" style="margin:0 auto 10px;">
+      <circle cx="262" cy="128" r="66" fill="#f15a24"></circle>
+      <circle cx="246" cy="128" r="66" fill="#211f6e"></circle>
+      <text x="246" y="153" font-size="78" font-weight="800" fill="#ffffff" text-anchor="middle" font-family="Arial, sans-serif">$</text>
+    </svg>
+    <h2>¡Listo, gracias! 🙌</h2>
+    <p>Ya tengo lo que necesito para tu sesión personalizada. Nos vemos ahí — ¡vamos a sacarle todo el jugo a tus próximos pasos!</p>
+  </div>
+
+</div>
+
+<script>
+// =========================================================================
+// PEGA AQUÍ LA URL DE TU GOOGLE APPS SCRIPT (ver instrucciones aparte)
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycby6n60-KAksHkJeBXI-3NcBG4GuyWGmYnsN39Md0_9QLS1DWc-xqDxcxxTm31ReNbjekA/exec";
+// =========================================================================
+
+const answers = {};
+
+const steps = [
+  {
+    id: 'identidad',
+    render: () => `
+      <h2>Empecemos 🙂</h2>
+      <p class="hint">Para poder prepararte una sesión hecha a tu medida.</p>
+      <label class="field-label">Nombre</label>
+      <input type="text" id="f_nombre" value="${answers.nombre||''}">
+      <label class="field-label">Correo registrado</label>
+      <input type="email" id="f_email" value="${answers.email||''}">
+    `,
+    save: () => {
+      answers.nombre = val('f_nombre');
+      answers.email = val('f_email');
+    },
+    valid: () => answers.nombre && answers.email
+  },
+  {
+    id: 'interes',
+    render: () => `
+      <h2>1. Del 1 al 10, ¿qué tan emocionado(a) estás con lo que estás aprendiendo en Excedente?</h2>
+      ${scaleHTML('interes', answers.interes)}
+      <div class="scale-labels"><span>Para nada</span><span>Muy emocionado(a)</span></div>
+    `,
+    save: () => { answers.interes = checkedValue('interes'); },
+    valid: () => !!answers.interes
+  },
+  {
+    id: 'engagement',
+    render: () => `
+      <h2>2. ¿Cuáles de estos ya has probado en Excedente?</h2>
+      <p class="hint">Marca todos los que apliquen, sin pena — es solo para saber por dónde arrancar en tu sesión.</p>
+      ${checkboxHTML('engagement', [
+        'Asistente de IA 24/7','Clases en vivo','Radar Bursátil Semanal','Radar Diario',
+        'Comunidad Privada','Kit de herramientas / plantillas','Todavía ninguno'
+      ], answers.engagement||[])}
+    `,
+    save: () => { answers.engagement = checkedValues('engagement'); },
+    valid: () => answers.engagement && answers.engagement.length > 0
+  },
+  {
+    id: 'activacion',
+    render: () => `
+      <h2>3. ¿Ya diste el paso de abrir cuenta en un bróker y hacer tu primera inversión?</h2>
+      ${optsHTML('activacion', ['Sí, ya invierto activamente','Abrí la cuenta pero todavía no invierto','Aún no he abierto la cuenta'], answers.activacion)}
+    `,
+    save: () => { answers.activacion = checkedValue('activacion'); },
+    valid: () => !!answers.activacion
+  },
+  {
+    id: 'avance',
+    render: () => `
+      <h2>4. ¿Sientes que estás más cerca de tus metas financieras desde que empezaste en Excedente?</h2>
+      ${optsHTML('avance', ['Sí, claramente','Más o menos','La verdad, no todavía'], answers.avance)}
+    `,
+    save: () => { answers.avance = checkedValue('avance'); },
+    valid: () => !!answers.avance
+  },
+  {
+    id: 'razon_no_avance',
+    condition: () => answers.avance === 'La verdad, no todavía' || answers.avance === 'Más o menos',
+    render: () => `
+      <h2>¿Qué sientes que te ha faltado para avanzar más?</h2>
+      ${optsHTML('razon_no_avance', ['Todavía no tengo dinero disponible para invertir','Me falta entender mejor el contenido','No he tenido tiempo suficiente','Otro motivo'], answers.razon_no_avance)}
+    `,
+    save: () => { answers.razon_no_avance = checkedValue('razon_no_avance'); },
+    valid: () => !!answers.razon_no_avance
+  },
+  {
+    id: 'ingresos',
+    render: () => `
+      <h2>5. Para orientarte mejor, ¿en qué rango están tus ingresos mensuales actuales?</h2>
+      <p class="hint">Esto queda solo entre nosotros — nos ayuda a recomendarte algo realista para ti, no a juzgar nada.</p>
+      ${optsHTML('ingresos', ['Menos de $200','Entre $200 y $500','Entre $500 y $1,000','Más de $1,000','Prefiero no decir'], answers.ingresos)}
+    `,
+    save: () => { answers.ingresos = checkedValue('ingresos'); },
+    valid: () => !!answers.ingresos
+  },
+  {
+    id: 'capacidad_inversion',
+    render: () => `
+      <h2>6. ¿Más o menos cuánto te sientes cómodo(a) invirtiendo en tu crecimiento financiero — al mes, o de una sola vez?</h2>
+      <p class="hint">No hay respuesta buena o mala, es solo para armarte una recomendación a tu medida.</p>
+      ${optsHTML('capacidad_inversion', [
+        'Hasta $50/mes','Entre $50 y $130/mes','Entre $130 y $250/mes (o similar de una vez)',
+        'Podría hacer una inversión mayor de una sola vez (ej. $500-$1,000+)','Prefiero conversarlo en la sesión'
+      ], answers.capacidad_inversion)}
+    `,
+    save: () => { answers.capacidad_inversion = checkedValue('capacidad_inversion'); },
+    valid: () => !!answers.capacidad_inversion
+  },
+  {
+    id: 'valor_excedente',
+    render: () => `
+      <h2>7. ¿Sientes que ha valido la pena ingresar a Excedente hasta ahora?</h2>
+      ${optsHTML('valor_excedente', ['Sí, totalmente','Más o menos','No estoy seguro(a)'], answers.valor_excedente)}
+    `,
+    save: () => { answers.valor_excedente = checkedValue('valor_excedente'); },
+    valid: () => !!answers.valor_excedente
+  },
+  {
+    id: 'recomendacion',
+    render: () => `
+      <h2>8. Del 1 al 10, ¿qué tan probable es que le hables de Excedente a alguien cercano?</h2>
+      ${scaleHTML('recomendacion', answers.recomendacion)}
+      <div class="scale-labels"><span>Nada probable</span><span>Muy probable</span></div>
+    `,
+    save: () => { answers.recomendacion = checkedValue('recomendacion'); },
+    valid: () => !!answers.recomendacion
+  },
+  {
+    id: 'pedido_sesion',
+    last: true,
+    render: () => `
+      <h2>9. Si pudieras pedir UNA cosa para aprovechar tu sesión personalizada, ¿cuál sería?</h2>
+      <p class="hint">Cuéntame qué te gustaría que revisemos juntos — así llego preparado.</p>
+      <textarea id="f_pedido" placeholder="Escribe aquí...">${answers.pedido_sesion||''}</textarea>
+    `,
+    save: () => { answers.pedido_sesion = val('f_pedido'); },
+    valid: () => true
+  }
+];
+
+// ---- helpers de render ----
+function scaleHTML(name, current) {
+  let html = '<div class="scale">';
+  for (let i = 1; i <= 10; i++) {
+    html += `<input type="radio" name="${name}" id="${name}_${i}" value="${i}" ${String(current)===String(i)?'checked':''}>
+      <label for="${name}_${i}">${i}</label>`;
+  }
+  return html + '</div>';
+}
+function optsHTML(name, options, current) {
+  return '<div class="opts">' + options.map(o => `
+    <label class="opt ${current===o?'checked':''}">
+      <input type="radio" name="${name}" value="${o}" ${current===o?'checked':''}> ${o}
+    </label>`).join('') + '</div>';
+}
+function checkboxHTML(name, options, current) {
+  return '<div class="opts">' + options.map(o => `
+    <label class="opt ${current.includes(o)?'checked':''}">
+      <input type="checkbox" name="${name}" value="${o}" ${current.includes(o)?'checked':''}> ${o}
+    </label>`).join('') + '</div>';
+}
+function val(id){ const el = document.getElementById(id); return el ? el.value.trim() : ''; }
+function checkedValue(name){ const el = document.querySelector(`input[name="${name}"]:checked`); return el ? el.value : ''; }
+function checkedValues(name){ return Array.from(document.querySelectorAll(`input[name="${name}"]:checked`)).map(i=>i.value); }
+
+// ---- navegación con lógica condicional ----
+function visibleSteps() {
+  return steps.filter(s => !s.condition || s.condition());
+}
+let currentId = steps[0].id;
+
+function renderStep() {
+  const vis = visibleSteps();
+  const idx = vis.findIndex(s => s.id === currentId);
+  const step = vis[idx];
+  document.getElementById('stepBody').innerHTML = step.render();
+  document.getElementById('progressFill').style.width = Math.round(((idx+1)/vis.length)*100) + '%';
+  document.getElementById('progressLabel').textContent = `Pregunta ${idx+1} de ${vis.length}`;
+  document.getElementById('backBtn').disabled = idx === 0;
+  document.getElementById('nextBtn').textContent = step.last ? 'Enviar respuestas' : 'Siguiente';
+
+  document.querySelectorAll('.opt input').forEach(inp => {
+    inp.addEventListener('change', () => {
+      const group = inp.closest('.opts');
+      if (inp.type === 'radio') group.querySelectorAll('.opt').forEach(o => o.classList.remove('checked'));
+      inp.closest('.opt').classList.toggle('checked', inp.checked);
+    });
+  });
+}
+
+document.getElementById('nextBtn').addEventListener('click', () => {
+  const vis = visibleSteps();
+  const idx = vis.findIndex(s => s.id === currentId);
+  const step = vis[idx];
+  step.save();
+  if (!step.valid()) {
+    document.getElementById('stepBody').style.outline = '2px solid #dc2626';
+    setTimeout(()=>{ document.getElementById('stepBody').style.outline='none'; }, 400);
+    return;
+  }
+  if (step.last) {
+    submitAnswers();
+    return;
+  }
+  const newVis = visibleSteps();
+  const newIdx = newVis.findIndex(s => s.id === currentId);
+  currentId = newVis[newIdx+1].id;
+  renderStep();
+});
+
+document.getElementById('backBtn').addEventListener('click', () => {
+  const vis = visibleSteps();
+  const idx = vis.findIndex(s => s.id === currentId);
+  if (idx > 0) {
+    currentId = vis[idx-1].id;
+    renderStep();
+  }
+});
+
+function submitAnswers() {
+  const btn = document.getElementById('nextBtn');
+  btn.disabled = true;
+  btn.textContent = 'Enviando...';
+
+  const payload = {
+    fecha: new Date().toISOString(),
+    nombre: answers.nombre || '',
+    email: answers.email || '',
+    interes_continuar: answers.interes || '',
+    engagement: (answers.engagement || []).join(', '),
+    activacion: answers.activacion || '',
+    avance: answers.avance || '',
+    razon_no_avance: answers.razon_no_avance || '',
+    ingresos: answers.ingresos || '',
+    capacidad_inversion: answers.capacidad_inversion || '',
+    valor_excedente: answers.valor_excedente || '',
+    recomendacion: answers.recomendacion || '',
+    pedido_sesion: answers.pedido_sesion || ''
+  };
+
+  if (SCRIPT_URL.indexOf('PEGA_AQUI') !== -1) {
+    console.log('Respuesta (modo prueba, sin Google Sheet conectado):', payload);
+    showThanks();
+    return;
+  }
+
+  fetch(SCRIPT_URL, {
+    method: 'POST',
+    mode: 'no-cors',
+    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+    body: JSON.stringify(payload)
+  }).then(showThanks).catch(showThanks);
+}
+
+function showThanks() {
+  document.getElementById('pulseForm').style.display = 'none';
+  document.querySelector('.progress-track').style.display = 'none';
+  document.getElementById('progressLabel').style.display = 'none';
+  document.getElementById('thanks').style.display = 'block';
+}
+
+renderStep();
+</script>
+
+
+</body></html>
